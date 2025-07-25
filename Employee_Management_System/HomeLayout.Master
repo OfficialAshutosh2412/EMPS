@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeLayout.master.cs" Inherits="Employee_Management_System.HomeLayout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--font osm cdn--%>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-vpNp+i1T2XcSxeUgfvuy8Hg3D1xKk+TcOJKdGHL2BHoX7KjNjyaKUsbmK2qJoAgC0Bp6+kef04zxJ2vvoL+L0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <%--tailwind css cdn--%>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-5VSbTLjzE6rM4NDGzJkYqjJBLXcZ0kXP0R4O7K1+6ScV/fhGVy4+eMabduOMPB4TbC3LBIZpaeYZ0N6Uu5I+3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form id="form1" runat="server" class="bg-gray-900 text-white min-h-screen flex items-center justify-center p-4">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <%--toastr js--%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</body>
+</html>
